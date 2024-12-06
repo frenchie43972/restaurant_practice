@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#800020", // Brugundy
+        secondary: "#FFD700", // Gold
+        neutral: "#F9F6F2", // Off-White
       },
     },
   },
