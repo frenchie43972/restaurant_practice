@@ -1,1 +1,1 @@
-# restaurant_practice
+A practice site using only vanilla HTML, CSS and JavaScript
