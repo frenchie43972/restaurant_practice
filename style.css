@@ -5,9 +5,9 @@
 }
 
 :root {
-  --primary-color: #FCF8F3;
-  --secondary-color: #8D0B41;
-  --tertiary-color: #FFBF00;
+  --primary-color: #fcf8f3;
+  --secondary-color: #8d0b41;
+  --tertiary-color: #ffbf00;
 }
 
 body {
@@ -86,6 +86,8 @@ img {
   font-size: 1.5rem;
 }
 
+/* Hero Section */
+
 /* Media Queries */
 
 @media (max-width: 1200px) {
@@ -96,7 +98,6 @@ img {
   .navbar-item a {
     font-size: 1.2rem;
   }
-
 }
 
 @media (max-width: 920px) {
