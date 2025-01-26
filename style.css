@@ -87,6 +87,25 @@ img {
 }
 
 /* Hero Section */
+.hero {
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content img:first-of-type {
+  opacity: 1;
+}
+
+.hero-content img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
 
 /* Media Queries */
 
