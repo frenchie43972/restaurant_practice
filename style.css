@@ -6,14 +6,17 @@
 
 :root {
   --primary-color: #fcf8f3;
-  --secondary-color: #8d0b41;
+  --secondary-color: #872341;
+  /* --secondary-color: #8d0b41; */
   --tertiary-color: #ffbf00;
 }
 
 body {
   font-family: Open Sans, sans-serif;
   line-height: 1.6;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: #fcf8f3;
+  /* padding-top: 180px; */
 }
 
 a {
@@ -26,107 +29,63 @@ ul {
 
 img {
   max-width: 100%;
+  /* height: auto; */
 }
 
-.container {
+/* .container {
   width: 100%;
   display: flex;
   margin: 10px auto;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-}
-
-/* Navbar Section */
-
-.navbar {
-  background: var(--secondary-color);
-  padding: 1rem 2rem;
-  top: 0;
-  left: 0;
-  right: 0;
-  position: fixed;
-
-  a {
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-
-  a:hover {
-    color: var(--tertiary-color);
-    font-weight: bolder;
-    transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
-  }
-}
-
-.navbar-logo img {
-  border-radius: 50%;
-}
-
-.navbar-title {
-  color: var(--primary-color);
-  font-size: 2rem;
-  font-family: Playfair;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.navbar-menu {
-  width: 300px;
-  font-style: oblique;
-}
-
-.navbar-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar-item a {
-  font-size: 1.5rem;
-}
+} */
 
 /* Hero Section */
 .hero {
-}
-
-.hero-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.hero-content img:first-of-type {
-  opacity: 1;
-}
-
-.hero-content img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
+  width: 100vw;
+  height: 50vh;
+  background-image: url("images/meat-dish.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Media Queries */
 
-@media (max-width: 1200px) {
-  .navbar-title {
-    font-size: 1.7rem;
-  }
-
-  .navbar-item a {
-    font-size: 1.2rem;
+@media (max-width: 2560px) {
+  .hero {
+    height: 500px;
   }
 }
 
+@media (max-width: 2000px) {
+  .hero {
+    height: 350px;
+  }
+}
+
+@media (max-width: 1200px) {
+}
+
 @media (max-width: 920px) {
-  .navbar-title {
-    display: none;
+  .hero {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 250px;
   }
 }
 
 @media (max-width: 556px) {
-  .navbar-logo img {
-    max-width: 50%;
+  .hero {
+    height: 200px;
   }
 }
