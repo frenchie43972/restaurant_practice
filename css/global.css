@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #fcf8f3;
+  --secondary-color: #872341;
+  --tertiary-color: #ffbf00;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  line-height: 1.6;
+  padding-top: 100px;
+  background-color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
