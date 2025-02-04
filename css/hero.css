@@ -20,3 +20,9 @@
 .hero img.active {
   opacity: 1;
 }
+
+@media (max-width: 920px) {
+  .hero {
+    height: 30vh;
+  }
+}
