@@ -10,8 +10,12 @@
   --tertiary-color: #ffbf00;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Open Sans, sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 1.6;
   padding-top: 100px;
   background-color: var(--secondary-color);
@@ -27,4 +31,23 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+.back-to-top {
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.back-to-top a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.back-to-top a:hover {
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  color: var(--tertiary-color);
 }
