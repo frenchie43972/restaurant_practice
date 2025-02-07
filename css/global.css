@@ -19,6 +19,7 @@ body {
   line-height: 1.6;
   padding-top: 100px;
   background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 a {
@@ -33,9 +34,13 @@ img {
   max-width: 100%;
 }
 
+/* Rerouting to the top of the page */
 .back-to-top {
+  display: flex;
   padding: 20px;
   margin: 10px 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .back-to-top a {
@@ -50,4 +55,21 @@ img {
   font-weight: bold;
   transition: color 0.3s ease-in-out;
   color: var(--tertiary-color);
+}
+
+/* Allows the line between Back to Top anchor tag */
+.back-to-top:before {
+  content: "";
+  width: 30%;
+  margin-right: 5px;
+  border-bottom: solid 1px var(--primary-color);
+  z-index: 1;
+}
+
+.back-to-top:after {
+  content: "";
+  width: 30%;
+  margin-left: 5px;
+  border-bottom: solid 1px var(--primary-color);
+  z-index: 1;
 }
